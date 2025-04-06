@@ -102,12 +102,10 @@ table {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  /* Ensures rounded corners work with overflow */
 }
 
 thead th {
   background-color: #e9ecef;
-  /* Light gray header */
   color: #495057;
   font-weight: 500;
   text-align: left;
@@ -128,7 +126,6 @@ tbody tr:hover {
   background-color: #f5f5f5;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   table {
     border: 0;
@@ -163,7 +160,6 @@ tbody tr:hover {
   td:last-child {
     border-bottom: 0;
     padding-bottom: 15px;
-    /* Add some space for action buttons */
   }
   th[scope="col"] {
     display: none;
@@ -172,7 +168,6 @@ tbody tr:hover {
 
 .actions {
   white-space: nowrap;
-  /* Prevent buttons from wrapping */
 }
 
 .actions button {
@@ -319,12 +314,10 @@ tbody tr:hover {
 
 .flag-icon-uk {
   background-image: url("../images/logo/englishFlag.png");
-  /* Corrected path */
 }
 
 .flag-icon-tr {
   background-image: url("../images/logo/turkishFlag.png");
-  /* Corrected path */
 }
 
 .navbar {

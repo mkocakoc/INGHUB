@@ -44,8 +44,7 @@ export class EmployeeList extends LitElement {
     }
 
     connectedCallback() {
-        super.connectedCallback();
-        // İlk render veya bileşen DOM'a bağlandıktan sonra dil anahtarını kullanabilirsiniz.
+        super.connectedCallback();       
         console.log(this.t('some.key'));
     }
 
