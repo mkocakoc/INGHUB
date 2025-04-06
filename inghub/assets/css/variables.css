@@ -1,0 +1,9 @@
+body {
+  font-family: "ING", sans-serif;
+  color: #495057;
+  background-color: #f8f9fa;
+}
+
+.navbar .nav-link:hover {
+  color: #ff6200;
+}/*# sourceMappingURL=variables.css.map */

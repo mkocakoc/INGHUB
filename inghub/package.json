@@ -1,0 +1,61 @@
+{
+  "name": "@lit/lit-starter-js",
+  "private": true,
+  "version": "2.0.2",
+  "description": "A simple web component",
+  "main": "my-element.js",
+  "module": "my-element.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo \"This is not a TypeScript project, so no need to build.\"",
+    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
+    "lint:eslint": "eslint '**/*.js'",
+    "lint:lit-analyzer": "lit-analyzer my-element.js",
+    "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --ignore-path ./.eslintignore --write",
+    "analyze": "cem analyze --litelement --globs \"**/*.js\" --exclude docs",
+    "analyze:watch": "cem analyze --litelement --globs \"**/*.js\" --exclude docs --watch",
+    "serve": "wds --watch",
+    "serve:prod": "MODE=prod npm run serve",
+    "checksize": "rollup -c ; cat my-element.bundled.js | gzip -9 | wc -c ; rm my-element.bundled.js",
+    "sass": "sass ./assets/css/styles.scss ./assets/css/styles.css --watch"   
+  },
+  "keywords": [
+    "web-components",
+    "lit-element",
+    "javascript",
+    "lit",
+    "starter",
+    "template-literal"
+  ],
+  "author": "Google LLC",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-env": "^7.26.9",
+    "@custom-elements-manifest/analyzer": "^0.6.3",
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@web/dev-server": "^0.4.6",
+    "@web/dev-server-legacy": "^1.0.0",
+    "@webcomponents/webcomponentsjs": "^2.8.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.15.0",   
+    "lit-analyzer": "^2.0.3",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^4.18.0",
+    "rollup-plugin-summary": "^2.0.1",
+    "sass": "^1.49.0",
+    "sass-loader": "^10.1.0",
+    "serve": "^14.2.4"
+  },
+  "customElements": "custom-elements.json"
+}

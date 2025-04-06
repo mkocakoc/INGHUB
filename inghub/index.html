@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./assets/js/employee-list.js"></script>
+  <script type="module" src="./assets/js/navbar.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/2eb78bb267.js" crossorigin="anonymous"></script>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/images/logo/favicon.png" type="image/png">
+</head>
+<body>
+  <navbar-component id="navbar"></navbar-component>
+  <employee-list id="employeeList" class="employeeList"></employee-list>
+
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbar = document.getElementById('navbar');
+      const employeeList = document.getElementById('employeeList');
+      if (navbar && employeeList) {
+        navbar.employeeList = employeeList;
+      } else {
+        console.error('Navbar or EmployeeList element not found in DOM.');
+      }
+    });
+  </script>
+</body>
+</html>

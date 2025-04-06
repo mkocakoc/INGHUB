@@ -1,0 +1,17 @@
+
+$primary-font: 'ING', sans-serif;
+$primary-color: #495057;
+$secondary-color: #ff6200;
+$light-gray: #f8f9fa;
+
+
+body {
+    font-family: $primary-font;
+    color: $primary-color;
+    background-color: $light-gray;
+    // ...
+  }
+  
+  .navbar .nav-link:hover {
+    color: $secondary-color;
+  }
